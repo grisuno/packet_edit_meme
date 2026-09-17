@@ -1,0 +1,23 @@
+{
+  "tool": "readmenator",
+  "generated_at": "2026-09-17T04:59:00Z",
+  "project_root": "/tmp/push_packet_edit_meme_20260917_010128",
+  "files": 4,
+  "symbols": 83,
+  "imports": 37,
+  "resolved_imports": 3,
+  "security_findings": 0,
+  "languages": {
+    "c": 3,
+    "h": 1
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "workflow": [
+    "ls *.md readmenator-*/  # orient: docs first, ignore build noise",
+    "grep -n '<keyword>' INDEX.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE.md SYMBOLS.md"
+  ],
+  "regenerate": "readmenator . --rebuild"
+}
