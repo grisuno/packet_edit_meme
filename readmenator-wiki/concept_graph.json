@@ -1,0 +1,1460 @@
+{
+  "concepts": [
+    {
+      "name": "offset",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "pedit_primitive.h",
+        "test_cve.c"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "write",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "pedit_primitive.h",
+        "test_cve.c"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "primitive",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "file",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "source",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "gnu",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "pedit",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 18,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "index",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "len",
+      "files": [
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "entry",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c"
+      ],
+      "mentions": 6,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "loopback",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "return",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "skb",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "slot",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "api",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "call",
+      "files": [
+        "pedit_primitive.h",
+        "test_cve.c"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "max",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "cache",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "calibrate",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "create",
+      "files": [
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "int",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "make",
+      "files": [
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "over",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.c"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "page",
+      "files": [
+        "packet_edit_meme.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "path",
+      "files": [
+        "pedit_primitive.c",
+        "test_cve.c"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "setup",
+      "files": [
+        "pedit_primitive.c",
+        "pedit_primitive.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "gnu",
+      "target": "api",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "api",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "cache",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "cache",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "calibrate",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "calibrate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "call",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "call",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "file",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "file",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "loopback",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "loopback",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "max",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "max",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "offset",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "offset",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "page",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "page",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "pedit",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "pedit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "primitive",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "primitive",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "setup",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "setup",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "skb",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "skb",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "slot",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "slot",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "write",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "gnu",
+      "target": "write",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "api",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "api",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "cache",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "cache",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "calibrate",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "calibrate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "call",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "call",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "file",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "file",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "loopback",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "loopback",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "max",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "max",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "page",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "page",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "pedit",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "pedit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "primitive",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "primitive",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "setup",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "setup",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "skb",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "skb",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "slot",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "slot",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "write",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "offset",
+      "target": "write",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "api",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "api",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "cache",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "cache",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "calibrate",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "calibrate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "call",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "call",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "file",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "file",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "loopback",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "loopback",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "max",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "max",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "offset",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "offset",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "page",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "page",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "pedit",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "pedit",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "primitive",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "primitive",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "setup",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "setup",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "skb",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "skb",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "slot",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "slot",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "write",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "source",
+      "target": "write",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "api",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "api",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "cache",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "cache",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "calibrate",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "calibrate",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "call",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "call",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "file",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "file",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "loopback",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    },
+    {
+      "source": "write",
+      "target": "loopback",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "packet_edit_meme.c->pedit_primitive.h",
+        "pedit_primitive.c->pedit_primitive.h",
+        "test_cve.c->pedit_primitive.h"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `api` centralizes 2 files; Antithesis: `calibrate` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `file` pulls 3 files with 2 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `loopback` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `max` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `offset` pulls 4 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `pedit` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `primitive` pulls 3 files with 2 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `setup` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `skb` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?",
+    "Thesis: `api` centralizes 2 files; Antithesis: `write` pulls 4 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `consumes` explicit?"
+  ]
+}

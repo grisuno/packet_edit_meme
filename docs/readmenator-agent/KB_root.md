@@ -1,0 +1,111 @@
+# Subsystem: root
+
+## packet_edit_meme.c
+- Doc: elf_entry_offset: static const char *find_su(void) { struct stat info; int index; for (index =...
+- Layer: utility
+- Language: c
+- Symbols:
+  - `find_su` (function, line 58) `static const char *find_su(void)`
+  - `elf_entry_offset` (function, line 72) `static long elf_entry_offset(int fd)`
+  - `write_proc_file` (function, line 94) `static void write_proc_file(const char *path, const char *value)`
+  - `corrupt_entry` (function, line 108) `static int corrupt_entry(int su_fd, long entry_offset)`
+  - `run_exploit` (function, line 139) `static int run_exploit(void)`
+  - `apparmor_userns_bypass` (function, line 212) `static void apparmor_userns_bypass(char *self)`
+  - `main` (function, line 231) `int main(int argc, char **argv)`
+  - `exec` (function, line 8) `* and exec()s su, so the setuid bit makes it euid 0 globally and the corrupted * cached page runs the shellcode as...`
+  - `_GNU_SOURCE` (macro, line 20) `#define _GNU_SOURCE`
+  - `SHELLCODE_PAD` (macro, line 33) `#define SHELLCODE_PAD`
+- Depends on: `pedit_primitive.h`
+
+## pedit_primitive.c
+- Doc: request_blob_begin: like request_nest_begin but without NLA_F_NESTED -- for the ematch entry...
+- Layer: utility
+- Language: c
+- Symbols:
+  - `meta_value` (struct, line 79)
+  - `meta_header` (struct, line 85)
+  - `pedit_key_spec` (struct, line 90)
+  - `request_begin` (function, line 109) `static void request_begin(int type, int flags)`
+  - `request_reserve` (function, line 119) `static void *request_reserve(int length)`
+  - `request_append` (function, line 127) `static void request_append(const void *data, int length)`
+  - `request_attr` (function, line 132) `static void request_attr(int type, const void *data, int length)`
+  - `request_attr_str` (function, line 141) `static void request_attr_str(int type, const char *text)`
+  - `request_nest_begin` (function, line 146) `static struct rtattr *request_nest_begin(int type)`
+  - `request_blob_begin` (function, line 157) `static struct rtattr *request_blob_begin(int type)`
+  - `request_nest_end` (function, line 166) `static void request_nest_end(struct rtattr *attr)`
+  - `request_send` (function, line 171) `static int request_send(int allow_enoent)`
+  - `link_up` (function, line 194) `static int link_up(int index)`
+  - `clsact_delete` (function, line 226) `static void clsact_delete(int index)`
+  - `clsact_add` (function, line 240) `static int clsact_add(int index)`
+  - `append_pktlen_ematch` (function, line 258) `static void append_pktlen_ematch(uint32_t threshold)`
+  - `append_pedit_action` (function, line 295) `static void append_pedit_action(const struct pedit_key_spec *keys, int key_count)`
+  - `egress_pedit_add` (function, line 342) `static int egress_pedit_add(int index, const struct pedit_key_spec *keys, int key_count)`
+  - `fill_ihl_key` (function, line 374) `static void fill_ihl_key(struct pedit_key_spec *key)`
+  - `pedit_burst` (function, line 384) `static int pedit_burst(int src_fd, const struct pedit_key_spec *keys, int key_count)`
+  - `calibrate` (function, line 437) `static int calibrate(void)`
+  - `setup` (function, line 488) `int setup(void)`
+  - `api_fd_write` (function, line 522) `int api_fd_write(int fd, off_t offset, const void *src, size_t size)`
+  - `ematch` (function, line 339) `* pkt_len ematch (only the data skb is touched, no out-of-range log spam);`
+  - `_GNU_SOURCE` (macro, line 8) `#define _GNU_SOURCE`
+  - `IP_IHL_KEY_OFFSET` (macro, line 28) `#define IP_IHL_KEY_OFFSET`
+  - `IP_IHL_KEY_VALUE` (macro, line 29) `#define IP_IHL_KEY_VALUE`
+  - `IP_IHL_KEY_MASK` (macro, line 30) `#define IP_IHL_KEY_MASK`
+  - `MAX_PEDIT_KEYS` (macro, line 31) `#define MAX_PEDIT_KEYS`
+  - `LOOPBACK_ADDR` (macro, line 33) `#define LOOPBACK_ADDR`
+  - `LOOPBACK_PREFIX` (macro, line 34) `#define LOOPBACK_PREFIX`
+  - `LOOPBACK_PORT` (macro, line 35) `#define LOOPBACK_PORT`
+  - `LISTEN_BACKLOG` (macro, line 36) `#define LISTEN_BACKLOG`
+  - `SETTLE_USEC` (macro, line 37) `#define SETTLE_USEC`
+  - `CALIB_PATH` (macro, line 39) `#define CALIB_PATH`
+  - `CALIB_LEN` (macro, line 40) `#define CALIB_LEN`
+  - `CALIB_PROBE_OFFSET` (macro, line 41) `#define CALIB_PROBE_OFFSET`
+  - `CALIB_MARK_BYTE` (macro, line 42) `#define CALIB_MARK_BYTE`
+  - `REQUEST_BUF_LEN` (macro, line 44) `#define REQUEST_BUF_LEN`
+  - `REPLY_BUF_LEN` (macro, line 45) `#define REPLY_BUF_LEN`
+  - `FILTER_PRIO` (macro, line 46) `#define FILTER_PRIO`
+  - `ACTION_LIST_FIRST` (macro, line 47) `#define ACTION_LIST_FIRST`
+  - `NLA_F_NESTED` (macro, line 50) `#define NLA_F_NESTED`
+  - `TC_H_CLSACT` (macro, line 53) `#define TC_H_CLSACT`
+  - `TC_H_MIN_EGRESS` (macro, line 56) `#define TC_H_MIN_EGRESS`
+  - `TC_ACT_PIPE` (macro, line 59) `#define TC_ACT_PIPE`
+  - `TCA_MATCHALL_ACT` (macro, line 62) `#define TCA_MATCHALL_ACT`
+  - `MIN_DATA_PKT_LEN` (macro, line 68) `#define MIN_DATA_PKT_LEN`
+  - `TCA_EM_META_HDR` (macro, line 70) `#define TCA_EM_META_HDR`
+  - `TCA_EM_META_RVALUE` (macro, line 71) `#define TCA_EM_META_RVALUE`
+  - `META_TYPE_INT` (macro, line 73) `#define META_TYPE_INT`
+  - `META_ID_PKTLEN` (macro, line 74) `#define META_ID_PKTLEN`
+  - `META_ID_VALUE` (macro, line 75) `#define META_ID_VALUE`
+  - `META_KIND_PKTLEN` (macro, line 76) `#define META_KIND_PKTLEN`
+  - `META_KIND_VALUE` (macro, line 77) `#define META_KIND_VALUE`
+- Depends on: `pedit_primitive.h`
+
+## pedit_primitive.h
+- Doc: setup: Bring lo up, open the loopback listener, calibrate the skb->file offset * delta.
+- Layer: utility
+- Language: h
+- Symbols:
+  - `bytes` (function, line 4) `* * Native write unit is 4 bytes (one pedit key == one u32 via skb_store_bits);`
+  - `setup` (function, line 19) `int setup(void);`
+  - `api_fd_write` (function, line 24) `int api_fd_write(int fd, off_t offset, const void *src, size_t size);`
+  - `PEDIT_PRIMITIVE_H` (macro, line 9) `#define PEDIT_PRIMITIVE_H`
+  - `PEDIT_SLOT` (macro, line 14) `#define PEDIT_SLOT`
+  - `PEDIT_MAX_WRITE` (macro, line 15) `#define PEDIT_MAX_WRITE`
+- Imported by: `packet_edit_meme.c`, `pedit_primitive.c`, `test_cve.c`
+
+## test_cve.c
+- Layer: testing
+- Language: c
+- Symbols:
+  - `write_case` (struct, line 25)
+  - `make_source` (function, line 36) `static void make_source(int call, off_t offset, uint8_t *src, size_t size)`
+  - `create_target` (function, line 46) `static int create_target(void)`
+  - `main` (function, line 66) `int main(void)`
+  - `_GNU_SOURCE` (macro, line 9) `#define _GNU_SOURCE`
+  - `TARGET_PATH` (macro, line 17) `#define TARGET_PATH`
+  - `TARGET_LEN` (macro, line 18) `#define TARGET_LEN`
+  - `CALL_COUNT` (macro, line 19) `#define CALL_COUNT`
+  - `SRC_MIX_CALL` (macro, line 20) `#define SRC_MIX_CALL`
+  - `SRC_MIX_OFFSET` (macro, line 21) `#define SRC_MIX_OFFSET`
+  - `SRC_MIX_POS` (macro, line 22) `#define SRC_MIX_POS`
+  - `SRC_SEED` (macro, line 23) `#define SRC_SEED`
+- Depends on: `pedit_primitive.h`
