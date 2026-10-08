@@ -12,7 +12,7 @@
 **Total Files Parsed:** 4 | **Total Symbols Extracted:** 83 | **Total Imports:** 37
  | **Resolved Imports:** 3
 
-<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:1e0fd0b | date:2026-07-18 -->
+<!-- ranking_model: v1.0 | weights: {ppr:0.45,auth:0.2,test:0.15,doc:0.1,fresh:0.1} | alpha:0.85 | commit:05a4468 | date:2026-07-18 -->
 
 
 ## Table of Contents
@@ -26,13 +26,12 @@
 7. [Hotspot Analysis](#hotspot-analysis)
 8. [Change Impact Analysis](#change-impact-analysis)
 9. [Suggested Linting Rules](#suggested-linting-rules)
-10. [Concept Graph](#concept-graph)
-11. [Orphans](#orphans)
-12. [Query Recipes](#query-recipes)
-13. [Structural Knowledge Map](#structural-knowledge-map)
-14. [UML Class Diagram](#uml-class-diagram)
-15. [Code Property Graph](#code-property-graph)
-16. [Architecture Reference](#architecture-reference)
+10. [Orphans](#orphans)
+11. [Query Recipes](#query-recipes)
+12. [Structural Knowledge Map](#structural-knowledge-map)
+13. [UML Class Diagram](#uml-class-diagram)
+14. [Code Property Graph](#code-property-graph)
+15. [Architecture Reference](#architecture-reference)
     - [C (3 files)](#c-3-files)
     - [H (1 files)](#h-1-files)
 
@@ -75,10 +74,10 @@ Auto-detected from path patterns, naming conventions, and imported frameworks.
 
 | Layer | Files |
 |-------|-------|
-| utility | 3 |
+| infrastructure | 3 |
 | testing | 1 |
 
-### utility
+### infrastructure
 
 - `packet_edit_meme.c` (c, 10 symbols)
 - `pedit_primitive.c` (c, 55 symbols)
@@ -153,91 +152,6 @@ Files ranked by combined complexity (symbol count) and centrality (connection co
 | `packet_edit_meme.c` | 0.182 | 0.632 | 0.452 | 10 | 12 |
 | `pedit_primitive.c` | 1.000 | 1.000 | 1.000 | 55 | 19 |
 | `test_cve.c` | 0.218 | 0.368 | 0.308 | 12 | 7 |
-
----
-
-## Concept Graph
-
-Semantic second-brain layer: nouns are concept nodes, verbs are edges. Each noun maps atomically to a file set (EXTRACTED); each verb aggregates structural imports, calls, and inherits into consumes, invokes, extends, depends_on, or bridges (INFERRED).
-
-**26 concepts, 100 relations.**
-
-| Concept | Files | Mentions |
-|---------|-------|----------|
-| `offset` | 4 | 11 |
-| `write` | 4 | 8 |
-| `primitive` | 3 | 6 |
-| `file` | 3 | 4 |
-| `source` | 3 | 4 |
-| `gnu` | 3 | 3 |
-| `pedit` | 2 | 18 |
-| `index` | 2 | 7 |
-| `len` | 2 | 7 |
-| `entry` | 2 | 6 |
-| `loopback` | 2 | 5 |
-| `return` | 2 | 4 |
-| `skb` | 2 | 4 |
-| `slot` | 2 | 4 |
-| `api` | 2 | 3 |
-| `call` | 2 | 3 |
-| `max` | 2 | 3 |
-| `cache` | 2 | 2 |
-| `calibrate` | 2 | 2 |
-| `create` | 2 | 2 |
-| `int` | 2 | 2 |
-| `make` | 2 | 2 |
-| `over` | 2 | 2 |
-| `page` | 2 | 2 |
-| `path` | 2 | 2 |
-| `setup` | 2 | 2 |
-
-### Verb Edges
-
-| Source | Verb | Target | Strength | Evidence |
-|--------|------|--------|----------|----------|
-| `gnu` | `consumes` | `api` | 1.00 | 3 |
-| `gnu` | `depends_on` | `api` | 1.00 | 3 |
-| `gnu` | `consumes` | `cache` | 1.00 | 3 |
-| `gnu` | `depends_on` | `cache` | 1.00 | 3 |
-| `gnu` | `consumes` | `calibrate` | 1.00 | 3 |
-| `gnu` | `depends_on` | `calibrate` | 1.00 | 3 |
-| `gnu` | `consumes` | `call` | 1.00 | 3 |
-| `gnu` | `depends_on` | `call` | 1.00 | 3 |
-| `gnu` | `consumes` | `file` | 1.00 | 3 |
-| `gnu` | `depends_on` | `file` | 1.00 | 3 |
-| `gnu` | `consumes` | `loopback` | 1.00 | 3 |
-| `gnu` | `depends_on` | `loopback` | 1.00 | 3 |
-| `gnu` | `consumes` | `max` | 1.00 | 3 |
-| `gnu` | `depends_on` | `max` | 1.00 | 3 |
-| `gnu` | `consumes` | `offset` | 1.00 | 3 |
-| `gnu` | `depends_on` | `offset` | 1.00 | 3 |
-| `gnu` | `consumes` | `page` | 1.00 | 3 |
-| `gnu` | `depends_on` | `page` | 1.00 | 3 |
-| `gnu` | `consumes` | `pedit` | 1.00 | 3 |
-| `gnu` | `depends_on` | `pedit` | 1.00 | 3 |
-| `gnu` | `consumes` | `primitive` | 1.00 | 3 |
-| `gnu` | `depends_on` | `primitive` | 1.00 | 3 |
-| `gnu` | `consumes` | `setup` | 1.00 | 3 |
-| `gnu` | `depends_on` | `setup` | 1.00 | 3 |
-| `gnu` | `consumes` | `skb` | 1.00 | 3 |
-| `gnu` | `depends_on` | `skb` | 1.00 | 3 |
-| `gnu` | `consumes` | `slot` | 1.00 | 3 |
-| `gnu` | `depends_on` | `slot` | 1.00 | 3 |
-| `gnu` | `consumes` | `write` | 1.00 | 3 |
-| `gnu` | `depends_on` | `write` | 1.00 | 3 |
-
-### Dialectic Prompts
-
-- Thesis: `api` centralizes 2 files; Antithesis: `calibrate` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `file` pulls 3 files with 2 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `loopback` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `max` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `offset` pulls 4 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `consumes` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `pedit` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `primitive` pulls 3 files with 2 shared (Jaccard 0.67); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `setup` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `skb` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `bridges` explicit?
-- Thesis: `api` centralizes 2 files; Antithesis: `write` pulls 4 files with 2 shared (Jaccard 0.50); Synthesis: should they merge, split by layer, or keep `consumes` explicit?
 
 ---
 

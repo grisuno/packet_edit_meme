@@ -1,8 +1,7 @@
 # Subsystem: root
 
 ## packet_edit_meme.c
-- Doc: elf_entry_offset: static const char *find_su(void) { struct stat info; int index; for (index =...
-- Layer: utility
+- Layer: infrastructure
 - Language: c
 - Symbols:
   - `find_su` (function, line 58) `static const char *find_su(void)`
@@ -12,14 +11,13 @@
   - `run_exploit` (function, line 139) `static int run_exploit(void)`
   - `apparmor_userns_bypass` (function, line 212) `static void apparmor_userns_bypass(char *self)`
   - `main` (function, line 231) `int main(int argc, char **argv)`
-  - `exec` (function, line 8) `* and exec()s su, so the setuid bit makes it euid 0 globally and the corrupted * cached page runs the shellcode as...`
+  - `exec` (function, line 8) `* and exec()s su, so the setuid bit makes it euid 0 globally and the corrupted * cached page runs the shellcode as real root. * * Shellcode is pure x86_64 syscalls (setuid=105, execve=59) -- the sysca`
   - `_GNU_SOURCE` (macro, line 20) `#define _GNU_SOURCE`
   - `SHELLCODE_PAD` (macro, line 33) `#define SHELLCODE_PAD`
 - Depends on: `pedit_primitive.h`
 
 ## pedit_primitive.c
-- Doc: request_blob_begin: like request_nest_begin but without NLA_F_NESTED -- for the ematch entry...
-- Layer: utility
+- Layer: infrastructure
 - Language: c
 - Symbols:
   - `meta_value` (struct, line 79)
@@ -80,8 +78,7 @@
 - Depends on: `pedit_primitive.h`
 
 ## pedit_primitive.h
-- Doc: setup: Bring lo up, open the loopback listener, calibrate the skb->file offset * delta.
-- Layer: utility
+- Layer: infrastructure
 - Language: h
 - Symbols:
   - `bytes` (function, line 4) `* * Native write unit is 4 bytes (one pedit key == one u32 via skb_store_bits);`

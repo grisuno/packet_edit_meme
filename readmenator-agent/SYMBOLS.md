@@ -7,7 +7,7 @@
 | `apparmor_userns_bypass` | function | `packet_edit_meme.c:212` | `static void apparmor_userns_bypass(char *self)` |
 | `corrupt_entry` | function | `packet_edit_meme.c:108` | `static int corrupt_entry(int su_fd, long entry_offset)` |
 | `elf_entry_offset` | function | `packet_edit_meme.c:72` | `static long elf_entry_offset(int fd)` |
-| `exec` | function | `packet_edit_meme.c:8` | `* and exec()s su, so the setuid bit makes it euid 0 globally and the corrupted * cached page runs the shellcode as...` |
+| `exec` | function | `packet_edit_meme.c:8` | `* and exec()s su, so the setuid bit makes it euid 0 globally and the corrupted * cached page runs the shellcode as real ` |
 | `find_su` | function | `packet_edit_meme.c:58` | `static const char *find_su(void)` |
 | `main` | function | `packet_edit_meme.c:231` | `int main(int argc, char **argv)` |
 | `run_exploit` | function | `packet_edit_meme.c:139` | `static int run_exploit(void)` |
